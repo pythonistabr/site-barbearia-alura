@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Contato </title>
+        <!-- <link rel="stylesheet" href="/_css/reset.css"> !-->
+        <link rel="stylesheet" href="_css/estilo.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400&display=swap" rel="stylesheet"> 
+    </head>
+    <body>
+        <header>
+            <div class="caixa">
+                <img src="_imgs/produtos/logo.png">
+            
+                <nav class="navegacao">
+                    <ul class="itens-navegacao">
+                        <li> <a href= "index.html"> Home </a></li>
+                        <li> <a href= "produtos.htlm"> Produtos </a></li>
+                        <li> <a href= "contatos.html"> Contatos </a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        
+        <main>
+            <form class="cadastro-cliente">
+                <label for="nomesobrenome">Nome e sobrenome</label>
+                <input class="info-contato" type="text" id="nomesobrenome" required>
+        
+                <label for="email">Email</label>
+                <input class="info-contato" type="email" id="email"  required placeholder="seunome@gmail.com">
+        
+                <label for="telefone">Telefone</label>
+                <input class="info-contato" type="tel" id="telefone" required placeholder="(xx) xxxxx-xxxx">
+        
+                <input id="submit" class="info-contato" type="submit" value="Enviar formulário">
+            </form>
+
+            <label class="cadastro-cliente" for="mensagem">Mensagem</label><br>
+            <textarea class="caixa-texto" id="mensagem" cols="70" rows="10" required></textarea>
+            
+            <div class="cadastro-cliente">
+                <p>Em qual horário você prefere ser atendido?</p>
+                <select>
+                    <option>Manhã</option>
+                    <option>Tarde</option>
+                    <option>Noite</option>
+                </select>
+            </div>
+
+            <p class="forma-contato">Forma de contato </p>
+            
+            <div class="forma-contato">
+                <label><input type="radio" id="Email" name="contato">Email</label><br>
+                <label><input type="radio" id="Whatsapp" name="contato" checked>Whatsapp</label><br>
+                <label><input type="radio" id="Telegram" name="contato">Telegram</label><br>
+                <label><input type="radio" id="Ligacao" name="contato">Ligação</label><br>
+            </div>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dia</th>
+                        <th>horário</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Segunda</td>
+                        <td>08 às 20h</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Quarta</td>
+                        <td>08 às 20h</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Sexta</td>
+                        <td>08 às 20h</td>
+                    </tr>
+                </tbody>
+            
+            </table><br>
+            
+            <label class="checkbox"><input type="checkbox" checked> Gostaria de receber nossas novidades por email?</label><br>
+            <button class="enviar">Enviar</button> 
+        </main>
+
+        <footer id="rodape">
+            <img src="_imgs/produtos/logo-branco.png" alt="Logo Barbearia Alura">
+            <p> &copy; Copyright Barbearia Alura - 2022</p>
+        </footer>
+    </body>
+</html>
